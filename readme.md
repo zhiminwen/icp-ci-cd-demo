@@ -6,6 +6,7 @@ This repo demonstrate the automatic build of CI/CD pipeline flow in a airgap env
 Given the restriction of airgap, the github based CI/CD flow will not work. 
 
 Instead we deploy GitLab and Jenkins to ICp, and we developed a set of rake task library to facilitate the automatic pipeline building.
+
 ![Architecture](images/arch.png)
 
 
