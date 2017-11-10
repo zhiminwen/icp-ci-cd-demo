@@ -19,7 +19,7 @@ Assume you have helm client installed, deploy the GitLab and Jenkins with the fo
 ```
 helm install --set "serviceType=NodePort,externalUrl=http://icp-master/,gitlabRootPassword=password" stable/gitlab-ce
 
-helm install --set "Master.ServiceType=NodePort,Master.AdminPassword=password,Master.InstallPlugins=kubernetes:0.11,workflow-aggregator:2.5,workflow-job:2.13,credentials-binding:1.12,git:3.4.0,gitlab:1.4.7" stable/jenkins
+helm install --set "Master.ServiceType=NodePort,Master.AdminPassword=password,Master.InstallPlugins={kubernetes:0.11,workflow-aggregator:2.5,workflow-job:2.13,credentials-binding:1.12,git:3.4.0,gitlab:1.4.7}" stable/jenkins
 ```
 
 Wait for the helm chart deployed, PVC bounded, GitLab and Jenkins PODs running.
